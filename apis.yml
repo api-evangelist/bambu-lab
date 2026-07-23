@@ -1,8 +1,30 @@
 aid: bambu-lab
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bambu-lab.png
 name: Bambu Lab
-description: 'Bambu Lab is a company surfaced as a portfolio company of idg-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer-technology. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Bambu Lab is a consumer 3D-printing company (X-series, P-series, and A-series
+  printers, the AMS multi-material system, and the MakerWorld model platform)
+  that connects its printers to the Bambu Handy app and Bambu Studio slicer over
+  a cloud and LAN control plane. There is no open, self-service public REST API:
+  machine control runs over an MQTT interface (us/cn.mqtt.bambulab.com:8883, TLS,
+  authenticated with a Bambu account user id and MQTT token), and a firmware-level
+  "printer control authorization" mechanism now gates binding, firmware updates,
+  camera streams, and print/movement commands. Third parties integrate through
+  Bambu Connect, LAN Developer Mode, or by applying for SDK access; the practical
+  API surface today is community-reverse-engineered (OpenBambuAPI, Bambu-Lab-Cloud-API,
+  and Python/Rust client libraries). Added to the API Evangelist network from the
+  IDG Capital portfolio and enriched from public sources.
 url: https://raw.githubusercontent.com/api-evangelist/bambu-lab/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +34,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer Technology
+- 3D Printing
+- Hardware
+- IoT
+- MQTT
+- Manufacturing
+- Printers
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +53,32 @@ maintainers:
 common:
 - type: Website
   url: https://bambulab.com/
+- type: Documentation
+  url: https://wiki.bambulab.com/
+- type: GettingStarted
+  url: https://wiki.bambulab.com/en/software/third-party-integration
+- type: GitHubOrganization
+  url: https://github.com/bambulab
+- type: Support
+  url: https://forum.bambulab.com/
+- type: Blog
+  url: https://blog.bambulab.com/
+- type: Store
+  url: https://store.bambulab.com/
+- type: TermsOfService
+  url: https://bambulab.com/en-us/policies/terms
+- type: PrivacyPolicy
+  url: https://bambulab.com/en-us/policies/privacy
+- type: TrustCenter
+  url: security/bambu-lab-trust-center.yml
+- type: Compliance
+  url: https://bambulab.com/en-us/trust-center
+- type: Packages
+  url: packages/bambu-lab-packages.yml
+- type: DomainSecurity
+  url: security/bambu-lab-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

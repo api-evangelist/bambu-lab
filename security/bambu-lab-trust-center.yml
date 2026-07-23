@@ -1,0 +1,12 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+source: https://bambulab.com/en-us/trust-center
+url: https://bambulab.com/en-us/trust-center
+certifications:
+- GDPR
+evidence:
+- source: https://bambulab.com/en-us/trust-center
+  keywords:
+  - trust center
+  - gdpr

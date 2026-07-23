@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+source: PyPI + crates.io registry search for Bambu Lab printer client libraries
+# NOTE: Bambu Lab publishes no official first-party API client SDK. Access to the
+# cloud/MQTT API is gated behind an SDK-access application, Bambu Connect, or
+# Developer Mode (LAN). Every package below is a COMMUNITY / reverse-engineered
+# client, so official is false for all of them and no `SDKs` pointer is emitted.
+packages:
+  - language: python
+    registry: pypi
+    name: bambulabs-api
+    url: https://pypi.org/project/bambulabs-api/
+    install: pip install bambulabs-api
+    official: false
+    note: Community Python API for controlling/monitoring Bambu Lab printers over MQTT.
+  - language: python
+    registry: pypi
+    name: bambu-lab-cloud-api
+    url: https://pypi.org/project/bambu-lab-cloud-api/
+    install: pip install bambu-lab-cloud-api
+    official: false
+    note: Community compatibility layer for the Bambu Lab Cloud API (coelacant1/Bambu-Lab-Cloud-API).
+  - language: rust
+    registry: crates.io
+    name: bambulab
+    url: https://crates.io/crates/bambulab
+    install: cargo add bambulab
+    official: false
+    note: Community Rust API client for Bambu Lab printers (markhaehnel/bambulab).
